@@ -24,7 +24,7 @@ ejax.post({
 // 		console.log(msg);
 // 	})
 
-// ejax.update({
+// ejax.put({
 // 	url: 'http://randomthoughts.link/thoughts',
 // 	body: {info: 'success!'}
 // 	})
