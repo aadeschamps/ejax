@@ -12,7 +12,7 @@ Right now, the library is incomplete. I have just started writing it. I'm lookin
 Using this library is very simple. All you need to do is use the ejax objects ajax methods in order create an object that responds to the '.send' method. For example, if you wanted to send a get request you can write as follows.
 
 ``` javascript
-	
+
 	ejax.get({
 		url: 'http://yourAPI.com/whatever'
 		})
@@ -28,7 +28,7 @@ The '.send' method taked in the callback function that will be called when the d
 
 Another useful part of this library is that you can create ajax functions with specific urls that you can reuse over and over again. Below is an example:
 
-``` javascript 
+``` javascript
 	var getInfo = ejax.get('http://yourAPI.com/whatever')
 
 	getInfo.send(function(data){
@@ -36,13 +36,15 @@ Another useful part of this library is that you can create ajax functions with s
 		})
 
 	var postInfo = ejax.get('http://yourAPI.com/whatever');
-	
+
 	var info = {name: 'John Doe'}
 	postInfo(info, function(data){
 		console.log(data);
 		})
 ```
 
-The getInfo function can be used anywhere in your program where you need to send a get request to that specific url. 
+The getInfo function can be used anywhere in your program where you need to send a get request to that specific url.
 
+### Testing
 
+The specs folder holds the testing for only verifying of the functions for request methods. More testing to be done in the future.
