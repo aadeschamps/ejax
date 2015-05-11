@@ -1,5 +1,5 @@
 {
-  "name": "ejax",
+  "name": "ezjax",
   "version": "0.0.1",
   "description": "I wanted to make a really simple and lightweight library to handle simple ajax requests using vanilla javascript. The ideas is that downloading the entire JQuery library when you don't really need it is unneccesary. This library makes it very easy to send out ajax requests in the browser without all of that.",
   "main": "ejax-simple.js",
