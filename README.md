@@ -26,7 +26,7 @@ The '.send' method taked in the callback function that will be called when the d
 
 Another useful part of this library is that you can create ajax functions with specific urls that you can reuse over and over again. Below is an example:
 
-``` javascript 
+``` javascript
 	var getInfo = ejax.get('http://yourAPI.com/whatever')
 
 	getInfo.send(function(data){
@@ -34,13 +34,42 @@ Another useful part of this library is that you can create ajax functions with s
 		})
 
 	var postInfo = ejax.get('http://yourAPI.com/whatever');
-	
+
 	var info = {name: 'John Doe'}
 	postInfo(info, function(data){
 		console.log(data);
 		})
 ```
 
-The getInfo function can be used anywhere in your program where you need to send a get request to that specific url. 
+The getInfo function can be used anywhere in your program where you need to send a get request to that specific url.
+
+### Testing
+
+The specs folder holds the testing for only verifying of the functions for request methods. More testing to be done in the future. (npm test command does not work yet, still learning everything!) (by contributor Alvin)
 
 
+#### MIT
+
+The MIT License (MIT)
+[OSI Approved License]
+The MIT License (MIT)
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
