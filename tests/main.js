@@ -1,7 +1,7 @@
 
 ejax.get('http://randomthoughts.link/thoughts')
 	.send(function(thought){
-		console.log(thought);
+		//console.log(thought);
 		console.log(thought.results[0])
 	})
 
@@ -11,7 +11,7 @@ ejax.post('http://randomthoughts.link/thoughts')
 		console.log(msg);
 	})
 
-
+//
 // ejax.del({
 // 	url: 'http://randomthoughts.link/thoughts',
 // 	body: {info: 'success!'}
@@ -19,7 +19,7 @@ ejax.post('http://randomthoughts.link/thoughts')
 // 	.send(function(msg){
 // 		console.log(msg);
 // 	})
-
+//
 // ejax.put({
 // 	url: 'http://randomthoughts.link/thoughts',
 // 	body: {info: 'success!'}
