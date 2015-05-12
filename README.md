@@ -13,9 +13,7 @@ Using this library is very simple. All you need to do is use the ejax objects aj
 
 ``` javascript
 	
-	ejax.get({
-		url: 'http://yourAPI.com/whatever'
-		})
+	ejax.get('http://yourAPI.com/whatever')
 		.send(function(data){
 			console.log(data);
 		})
